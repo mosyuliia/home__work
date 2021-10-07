@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/playfair-display-v22-latin-ext_latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/playfair-display-v22-latin-ext_latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/playfair-display-v22-latin-ext_latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/playfair-display-v22-latin-ext_latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/playfair-display-v22-latin-ext_latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/playfair-display-v22-latin-ext_latin-regular.svg#PlayfairDisplay') format('svg'); /* Legacy iOS */
+  }
+
+@font-face {
+    font-family: 'FuturaPT Heavy';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/FuturaPT-Heavy.woff')
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/proxima_nova_regular.woff');
+    src: url('../fonts/proxima_nova_regular.woff2')
+}
+
+*, *:before, *:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #464f54;
+    position: relative;
+}
+
+.container {
+    width: 90%;
+    max-width: 1920px;
+    margin: 0 auto;
+    z-index: 0;
+}
+
+.page {
+    margin: 0 auto;
+    width: 1415px;
+    height: 1000px;
+    background-color: #fff;
+    box-shadow: 5px 5px 50px #00000090;
+    margin-top: 200px;
+    
+}
+
+.border {
+    display: inline-block;
+    width: 1415px;
+    height: 100%;
+    background-color: transparent;
+    border-left: 2px solid #00000020;
+    margin-left: 90px;
+}
+
+ .content {
+    padding-left: 65px;
+    padding-right: 260px;
+    padding-top: 265px;
+    text-align: justify;    
+}
+
+.before_h1 {
+    font-family: 'Proxima Nova', sans-serif;
+    text-transform: uppercase;
+    font-size: 24px;
+    letter-spacing: 7px;
+    opacity: 50%;
+    margin-bottom: 35px;
+}
+
+h1 {
+    font-family: 'FuturaPT Heavy', sans-serif;
+    text-transform: uppercase;
+    font-size: 102px;
+    letter-spacing: 6px;
+    opacity: 85%;
+    line-height: 120px;
+}
+
+p {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    word-spacing: -2px;
+    margin-bottom: 20px;
+    line-height: 55px;
+}
+
+h1 + p {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    font-style: italic;
+    letter-spacing: 1px;
+    opacity: 50%;
+    margin-bottom: 55px;
+}
+
+#boxes {
+    position: absolute;
+    width: 64.5%;
+    min-width: 650px;
+    right: 0;
+    z-index: 1;
+}
+
+.black_box {
+    width: 100%;
+    height: 250px;
+    background-color: #181818;
+    
+}
+
+.yellow_box {
+    width: calc(100% - 64.5px);
+    height: 100px;
+    background-color: #fbc02d;
+    margin-left: 80px;
+}
+
+
+
+
+
+.clear {
+    clear: both;
+    height: 0;
+    display: block;
+    line-height: 0;
+}
